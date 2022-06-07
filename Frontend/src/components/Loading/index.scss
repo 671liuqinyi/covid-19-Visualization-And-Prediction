@@ -1,0 +1,15 @@
+$loading-height:826px;
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 519px;
+}
+// 当屏幕宽度大于1380时调整高度适配屏幕
+@media screen and (min-width:1380px) {
+  .loading{
+    height: 826px;
+  }
+}

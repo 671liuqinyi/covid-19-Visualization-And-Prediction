@@ -1,0 +1,142 @@
+.grid {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  height: 100%;
+  width: 100%;
+}
+
+/*左侧地图*/
+#map {
+  background-color: #f3f5f7;
+  // height: 519px;
+  height: calc(100% - 10px);
+}
+
+/*右侧数据*/
+#data {
+  display: grid;
+  grid-template-rows: 3fr 7fr;
+  border-radius: 5px;
+  background-color: #f3f5f7;
+}
+
+/* 六个疫情数据*/
+.recentNumber {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.recentNumber [class^='box'] {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  .add {
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+  }
+
+  .number {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  .text {
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+  }
+}
+
+.recentNumber .box1 {
+  background-color: #fffaf7;
+}
+
+.recentNumber .box1 .add span,
+.recentNumber .box1 .number {
+  color: #e57631;
+}
+
+.recentNumber .box2 {
+  background-color: #fff8f8;
+}
+
+.recentNumber .box2 .add span,
+.recentNumber .box2 .number {
+  color: #e61c1d;
+}
+
+.recentNumber .box3 {
+  background-color: #fff4f4;
+}
+
+.recentNumber .box3 .add span,
+.recentNumber .box3 .number {
+  color: #be2121;
+}
+
+.recentNumber .box4 {
+  background-color: #fef7ff;
+}
+
+.recentNumber .box4 .add span,
+.recentNumber .box4 .number {
+  color: #ae3ac6;
+}
+
+.recentNumber .box5 {
+  background-color: #f1f5ff;
+}
+
+.recentNumber .box5 .add span,
+.recentNumber .box5 .number {
+  color: #4e8be6;
+}
+
+.recentNumber .box6 {
+  background-color: #f3f6f8;
+}
+
+.recentNumber .box6 .add span,
+.recentNumber .box6 .number {
+  color: #4e5a65;
+}
+
+/*近期31省区市本土病例*/
+.chinaNow {
+  margin-top: 15px;
+  // background-color: #be2121;
+}
+
+.chinaNow h4 {
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+/*表格内容红色样式*/
+.red {
+  color: #ff7f7f;
+}
+
+/* 表格a标签箭头*/
+.detail::after {
+  content: '>';
+  margin-left: 5px;
+}
+
+/*修改表头文字、背景颜色*/
+.ant-table-thead>tr>th {
+  color: #4180f1;
+  background: #eef4ff !important;
+  font-size: 18px;
+}

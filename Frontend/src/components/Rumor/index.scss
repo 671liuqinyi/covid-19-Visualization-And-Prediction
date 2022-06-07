@@ -1,0 +1,139 @@
+.rumor-container {
+  height: 100%;
+  background-color: rgb(242, 242, 242);
+  overflow: auto;
+}
+
+.rumor-header {
+  width: 800px;
+  height: 150px;
+  margin: 0 auto 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.rumor-content {
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  background-color: #3640a5;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  .left-top-triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background: url('../../../public/images/triangle.png') no-repeat;
+    background-size: cover;
+
+    span {
+      position: absolute;
+      top: 7px;
+      left: 4px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+
+  .right-top-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+  }
+
+  .fakeicon {
+    background: url('../../../public/images/fakeicon.png') no-repeat;
+    background-size: cover;
+  }
+
+  .trueicon {
+    background: url('../../../public/images/trueicon.png') no-repeat;
+    background-size: cover;
+  }
+
+  .unknownicon {
+    background: url('../../../public/images/unknownicon.png') no-repeat;
+    background-size: cover;
+  }
+
+  .rumor-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .rumor-body {
+    position: relative;
+    color: #2a36c1;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+
+    .rumor-summary {
+      height: 32px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .rumor-detail {
+      font-size: 14px;
+      font-weight: 400;
+      // display: none;
+    }
+
+    .more-detail a,
+    .less-detail a {
+      position: absolute;
+      display: block;
+      right: 10px;
+      bottom: 10px;
+      width: 70px;
+      height: 20px;
+      color: #666;
+      font-weight: 600;
+      font-size: 12px;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #666;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        margin-left: 5px;
+        margin-bottom: 2px;
+      }
+
+      &:hover {
+        color: #5f65bb;
+      }
+    }
+
+    .less-detail a {
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #666;
+        border-width: 2px 0px 0px 2px;
+        transform: rotate(45deg);
+        margin-left: 5px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+}

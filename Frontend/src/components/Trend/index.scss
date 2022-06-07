@@ -1,0 +1,16 @@
+.total-trend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  height: 100%;
+
+  [class^='trend'] {
+    padding-top: 15px;
+    height: 100%;
+
+    [id^='trend'] {
+      height: 100%;
+    }
+  }
+}

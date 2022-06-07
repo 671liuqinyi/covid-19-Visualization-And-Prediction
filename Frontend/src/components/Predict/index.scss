@@ -1,0 +1,31 @@
+.predict-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100%;
+  gap: 10px;
+
+  .predict-left {
+    display: grid;
+
+    .predict-bar {
+      height: 100%;
+      background-color: #fff;
+    }
+  }
+
+  .predict-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+    .pie-top {
+      height: 100%;
+      background-color: #fff;
+    }
+
+    .pie-bottom {
+      height: 100%;
+      background-color: #fff;
+    }
+  }
+}

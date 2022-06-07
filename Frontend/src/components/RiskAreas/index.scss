@@ -1,0 +1,132 @@
+.riskareas-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(242, 242, 242);
+  overflow: auto;
+
+  .riskareas-container {
+    width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px 50px 0;
+
+    .riskareas-banner {
+      height: 140px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .riskareas-header {
+      height: 164px;
+      padding: 20px 30px;
+      margin: 20px 0 30px 0;
+      background-color: #e6f0fa;
+
+      .riskarea-time {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .high-header,
+      .middle-header {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 415px;
+        height: 60px;
+        background: #fff;
+        line-height: 60px;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+
+        span {
+          color: #f26161;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+
+      .middle-header {
+        margin-left: 10px;
+
+        span {
+          color: #fdbe34;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+
+      .low-header {
+        font-weight: 700;
+        font-size: 16px;
+        color: #333;
+        margin-top: 5px;
+
+        span {
+          color: #7fc64f;
+        }
+      }
+    }
+
+
+
+    .riskareas-header-active {
+      border-bottom: 8px solid #00558e;
+    }
+
+    .high-area {
+      font-size: 16px;
+      font-weight: 700;
+      color: #00558e;
+      margin-bottom: 12px;
+      background: #eee;
+      padding: 20px;
+      padding-left: 30px;
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        border: 1px solid #e6e6e6;
+
+        tr {
+          height: 34px;
+          line-height: 34px;
+
+          td {
+            width: 50%;
+            font-size: 14px;
+            border-right: 2px solid #fff;
+            color: #333;
+          }
+
+          &:nth-child(even) {
+            background-color: #e6f0fa;
+          }
+
+          &:nth-child(odd) {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+
+
+    .high-td {
+      color: rgb(242, 97, 97) !important;
+      font-weight: bold;
+    }
+
+    .middle-td {
+      color: rgb(253, 190, 52) !important;
+      font-weight: bold;
+    }
+  }
+}
